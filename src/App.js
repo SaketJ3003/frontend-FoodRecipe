@@ -65,7 +65,7 @@ function App() {
     formData.append("image", image);
 
     try {
-      const res = await fetch("http://localhost:5000/api/recipe", {
+      const res = await fetch("https://backend-foodrecipe-production.up.railway.app/", {
         method: "POST",
         body: formData,
       });
